@@ -79,7 +79,7 @@ fourthFingerIsOpen
 For exmaple: thumb is open if the x value of landmark 3 and the x value of landmark 4 are less than x value of landmark 2 else it is close
 ![hand_landmarks](https://user-images.githubusercontent.com/82312119/189480949-6d67380e-4a27-4978-aba9-6da88c179222.png)
 
-#![hand_crops](https://user-images.githubusercontent.com/82312119/189480966-84e6dba9-b8f4-438f-a82e-8f9f4c8fe8cd.png)
+![hand_crops](https://user-images.githubusercontent.com/82312119/189480966-84e6dba9-b8f4-438f-a82e-8f9f4c8fe8cd.png)
 
 
 # Reference
