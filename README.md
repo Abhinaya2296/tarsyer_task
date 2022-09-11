@@ -4,12 +4,11 @@ we will learn how to Graphically select a Region of interest (ROI) in an image a
 There are two functions which can be used to select ROI or ROIs in OPENCV.
 “cv2.selectROI” which can be used to select a single ROI bounding box.
 Selecting a single ROI is useful when you are sure you have to crop a single subject/ ROI from the image.
-```
+
 
 
 ![Task_1](https://user-images.githubusercontent.com/82312119/189481125-528a3063-570f-4eba-9f91-64df4b1c3f3d.jpg)
 
-```
 
 
 
@@ -23,14 +22,18 @@ Click and drag the mouse to make bounding box on the image . Press enter to fini
 
 
 # Import the necessary libraries.
+```
 import cv2
 import numpy
+```
 
 # Thresholding
 Thresholding is a technique in OpenCV, which is the assignment of pixel values in relation to the threshold value provided. In thresholding, each pixel value is compared with the threshold value. If the pixel value is smaller than the threshold, it is set to 0, otherwise, it is set to a maximum value (generally 255). Thresholding is a very popular segmentation technique, used for separating an object considered as a foreground from its background. A threshold is a value which has two regions on its either side i.e. below the threshold or above the threshold. 
 In Computer Vision, this technique of thresholding is done on grayscale images. So initially, the image has to be converted in grayscale color space.
 #Syntax:
+```
 cv2.threshold(source, thresholdValue, maxVal, thresholdingTechnique) 
+```
 # Parameters: 
 -> source: Input Image array (must be in Grayscale). 
 -> thresholdValue: Value of Threshold below and above which pixel values will change accordingly. 
@@ -48,7 +51,10 @@ cv2.THRESH_BINARY_INV: Inverted or Opposite case of cv2.THRESH_BINARY.
 
 # Adaptive thresholding
 Adaptive thresholding is the method where the threshold value is calculated for smaller regions. This leads to different threshold values for different regions with respect to the change in lighting. We use cv2.adaptiveThreshold for this.
-Syntax: cv2.adaptiveThreshold(source, maxVal, adaptiveMethod, thresholdType, blocksize, constant)
+# Syntax: 
+```
+cv2.adaptiveThreshold(source, maxVal, adaptiveMethod, thresholdType, blocksize, constant)
+```
 
 # Parameters:
 -> source: Input Image array(Single-channel, 8-bit or floating-point)
@@ -74,8 +80,10 @@ A morphological opening is an erosion followed by a dilation. This operation is 
 # hand-gesture-recognition-using-mediapipe
 
 # Requirements
+```
 1)opencv-python
 2)mediapipe
+```
 
 
 # MediaPipe
