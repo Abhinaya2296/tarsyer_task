@@ -4,9 +4,13 @@ we will learn how to Graphically select a Region of interest (ROI) in an image a
 There are two functions which can be used to select ROI or ROIs in OPENCV.
 “cv2.selectROI” which can be used to select a single ROI bounding box.
 Selecting a single ROI is useful when you are sure you have to crop a single subject/ ROI from the image.
-...
+```
+
+
 ![Task_1](https://user-images.githubusercontent.com/82312119/189481125-528a3063-570f-4eba-9f91-64df4b1c3f3d.jpg)
-...
+
+```
+
 
 
 Click and drag the mouse to make bounding box on the image . Press enter to finish selecting ROI and resume the program.
