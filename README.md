@@ -30,15 +30,18 @@ import numpy
 # Thresholding
 Thresholding is a technique in OpenCV, which is the assignment of pixel values in relation to the threshold value provided. In thresholding, each pixel value is compared with the threshold value. If the pixel value is smaller than the threshold, it is set to 0, otherwise, it is set to a maximum value (generally 255). Thresholding is a very popular segmentation technique, used for separating an object considered as a foreground from its background. A threshold is a value which has two regions on its either side i.e. below the threshold or above the threshold. 
 In Computer Vision, this technique of thresholding is done on grayscale images. So initially, the image has to be converted in grayscale color space.
-#Syntax:
+# Syntax:
 ```
 cv2.threshold(source, thresholdValue, maxVal, thresholdingTechnique) 
 ```
+
 # Parameters: 
+```
 -> source: Input Image array (must be in Grayscale). 
 -> thresholdValue: Value of Threshold below and above which pixel values will change accordingly. 
 -> maxVal: Maximum value that can be assigned to a pixel. 
 -> thresholdingTechnique: The type of thresholding to be applied. 
+```
 
 # Simple Thresholding
 The basic Thresholding technique is Binary Thresholding. For every pixel, the same threshold value is applied. If the pixel value is smaller than the threshold, it is set to 0, otherwise, it is set to a maximum value.
@@ -57,9 +60,11 @@ cv2.adaptiveThreshold(source, maxVal, adaptiveMethod, thresholdType, blocksize, 
 ```
 
 # Parameters:
+```
 -> source: Input Image array(Single-channel, 8-bit or floating-point)
 -> maxVal: Maximum value that can be assigned to a pixel.
 -> adaptiveMethod: Adaptive method decides how threshold value is calculated.
+```
 
  cv2.ADAPTIVE_THRESH_MEAN_C: Threshold Value = (Mean of the neighbourhood area values – constant value). In other words, it is the mean of the blockSize×blockSize neighborhood of a point minus constant.
  ![task3_Adaptive Gaussian](https://user-images.githubusercontent.com/82312119/189480896-2fdd5e1c-3ba2-4f84-bf10-e817a25d73bc.jpg)
