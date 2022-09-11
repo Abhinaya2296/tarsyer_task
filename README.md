@@ -18,6 +18,7 @@ Click and drag the mouse to make bounding box on the image . Press enter to fini
 
 # insights
 
+
 ![Task_1_insights](https://user-images.githubusercontent.com/82312119/189481156-1f3e3451-eae3-4387-b8e5-4a9fb2b5a037.jpg)
 
 
@@ -35,7 +36,7 @@ In Computer Vision, this technique of thresholding is done on grayscale images. 
 cv2.threshold(source, thresholdValue, maxVal, thresholdingTechnique) 
 ```
 
-# Parameters: 
+# Parameters 
 ```
 -> source: Input Image array (must be in Grayscale). 
 -> thresholdValue: Value of Threshold below and above which pixel values will change accordingly. 
@@ -49,6 +50,8 @@ The different Simple Thresholding Techniques are:
  
 cv2.THRESH_BINARY: If pixel intensity is greater than the set threshold, value set to 255, else set to 0 (black).
 cv2.THRESH_BINARY_INV: Inverted or Opposite case of cv2.THRESH_BINARY.
+
+
 ![task3_simple_Binary Threshold](https://user-images.githubusercontent.com/82312119/189480885-9ebf1aac-a823-45e1-8a08-601a44ffd5d0.jpg)
 
 
@@ -59,14 +62,14 @@ Adaptive thresholding is the method where the threshold value is calculated for 
 cv2.adaptiveThreshold(source, maxVal, adaptiveMethod, thresholdType, blocksize, constant)
 ```
 
-# Parameters:
+# Parameters
 ```
 -> source: Input Image array(Single-channel, 8-bit or floating-point)
 -> maxVal: Maximum value that can be assigned to a pixel.
 -> adaptiveMethod: Adaptive method decides how threshold value is calculated.
 ```
 
- cv2.ADAPTIVE_THRESH_MEAN_C: Threshold Value = (Mean of the neighbourhood area values – constant value). In other words, it is the mean of the blockSize×blockSize neighborhood of a point minus constant.
+cv2.ADAPTIVE_THRESH_MEAN_C: Threshold Value = (Mean of the neighbourhood area values – constant value). In other words, it is the mean of the blockSize×blockSize neighborhood of a point minus constant.
  ![task3_Adaptive Gaussian](https://user-images.githubusercontent.com/82312119/189480896-2fdd5e1c-3ba2-4f84-bf10-e817a25d73bc.jpg)
 
 # Morphological Operation
@@ -102,7 +105,15 @@ secondFingerIsOpen
 thirdFingerIsOpen
 fourthFingerIsOpen
 For exmaple: thumb is open if the x value of landmark 3 and the x value of landmark 4 are less than x value of landmark 2 else it is close
+
+
+
+
 ![hand_landmarks](https://user-images.githubusercontent.com/82312119/189480949-6d67380e-4a27-4978-aba9-6da88c179222.png)
+
+
+
+
 
 ![hand_crops](https://user-images.githubusercontent.com/82312119/189480966-84e6dba9-b8f4-438f-a82e-8f9f4c8fe8cd.png)
 
