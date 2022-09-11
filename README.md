@@ -14,6 +14,7 @@ Selecting a single ROI is useful when you are sure you have to crop a single sub
 
 Click and drag the mouse to make bounding box on the image . Press enter to finish selecting ROI and resume the program.
 
+
 ![crop](https://user-images.githubusercontent.com/82312119/189481138-988381c2-84b9-4a3e-ba3e-506774c815c9.jpeg)
 
 # insights
@@ -70,20 +71,43 @@ cv2.adaptiveThreshold(source, maxVal, adaptiveMethod, thresholdType, blocksize, 
 ```
 
 cv2.ADAPTIVE_THRESH_MEAN_C: Threshold Value = (Mean of the neighbourhood area values – constant value). In other words, it is the mean of the blockSize×blockSize neighborhood of a point minus constant.
+
+
+
+
  ![task3_Adaptive Gaussian](https://user-images.githubusercontent.com/82312119/189480896-2fdd5e1c-3ba2-4f84-bf10-e817a25d73bc.jpg)
+ 
+ 
 
 # Morphological Operation
 # Erosion
 Erosion is one of the most basic morphological operations. Erosion removes pixels on the boundaries of objects in an image, which will make the objects smaller.
+
+
+
 ![task2_erosion](https://user-images.githubusercontent.com/82312119/189480816-4bae805e-a73b-4a03-8fd8-4d21cc6851dd.jpg)
+
+
+
 
 # Dilation
 Dilation is the second most basic morphological operation. Dilation adds pixels on the boundaries of objects in an image, which will increase the size of objects in the image.
+
+
+
+
 ![task2_dilation](https://user-images.githubusercontent.com/82312119/189480829-13adcea5-4150-4156-baea-60028879adc5.jpg)
 
 # Opening
 A morphological opening is an erosion followed by a dilation. This operation is used to remove small objects and noise from an image.
+
+
+
+
+
 ![task2_opening](https://user-images.githubusercontent.com/82312119/189480840-0775ae05-3089-42e0-9d77-b5ff34f5cecf.jpg)
+
+
 
 # hand-gesture-recognition-using-mediapipe
 
